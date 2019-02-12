@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java - Aula 1</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<section style="padding: 0 30px;">
+
+		<h2>Linguagem de programação Java - Aula 1</h2>
+		
+		<h3>Objetivos desta aula</h3>
+		
+		<h4>Nesta aula você irá:</h4>
+		<ul>
+			<li>Identificar a importância das linguagens de programação</li>
+			<li>Identificar as características da linguagem de programação Java</li>
+			<li>Conhecer os tipos de programas Java</li>
+			<li>Identificar os requisitos necessários para se programar</li>
+			<li>Construir um ambiente de programação para a linguagem Java</li>
+			<li>Desenvolver pequenos programas com estruturas básicas</li>
+		</ul>
+		
+		<hr>
+		
+		<h3>Introdução às linguagens de programação</h3>
+		
+		<h4>Linguagem de programação:</h4>
+		<p>Conjunto de regras sintáticas e semânticas, utilizadas para se estabelecer comunicação entre o programador e o computador. São usadas para se escrever programas ou softwares.</p>
+		
+		<h4>Métodos de implementação de linguagens de programação:</h4>
+		<p>É a forma como uma linguagem de programação se comunica (é entendida e executada) com o computador.
+		O computador possui uma linguagem de máquina de nível baixo que oferece operações primitivas.
+		O software de sistema deve criar uma interface com os programas de nível mais alto.
+		O sistema operacional e as implementações de linguagens são dispostos em camadas sobre a interface de linguagem de máquina de um computador.</p>
+
+		<hr>
+
+		<h3>Introdução ao Java</h3>
+		<p>Linguagem de programação orientada a objetos desenvolvida por um time de programadores, liderados por Patrick Naughton, Mike Sheridan e James Gosling, na empresa Sun Microsystems.
+		<br />
+		Linguagem de Alto desempenho, suporta multithreading, compilação just-in-time e utilização de código nativo.
+		<br />
+		É uma linguagem que é compilada para um “bytecode”, que é interpretada por uma máquina virtual – JVM.
+		<br />
+		Principais características:
+		</p>
+		<dl>
+			<dt>Portabilidade</dt>
+			<dd>O Java pode ser executado em qualquer plataforma ou equipamento que possua um interpretador Java e que tenha sido especialmente compilado para o sistema a ser utilizado.</dd>
+			<dt>Orientada a objetos</dt>
+			<dd>Contém a sintaxe similar a linguagem C/C++, mas é baseada no modelo Simula67.</dd>
+			<dt>Segurança</dt>
+			<dd>Pode ser executado via rede, com restrições de execução, além de proteger o sistema do cliente contra possíveis ataques não intencionais.</dd>
+		</dl>
+
+		<h4>Por que esudar Java?</h4>
+		<p><b>Orientação a Objetos:</b> totalmente 00 - permitindo herança e reutilização de código de forma dinâmica e estática.
+		<br />
+		<b>Dinamismo:</b> permite ser aumentado durante a execução.
+		<br />
+		<b>Facilidade:</b> Derivada do C/C++ - Bem familiar. O ambiente retira do programador a responsabilidade de gerenciar a memória e os ponteiros.</p>
+
+		<hr>
+
+		<h4>Utilizações E Aplicações Do Java:</h4>
+		<ul>
+			<li>Desenvlvimento de aplicativos corporativos de grande porte</li>
+			<li>Desenvolvimento de aplicativos web</li>
+			<li>Fornecimento de aplicativos para dispositivos voltados para o consumo opular (celulares, pagers, PDAs, etc)</li>
+			<li>Muitos outros propositos</li>
+		</ul>
+
+		<h4>Funcionamento de um programa Java</h4>
+		<dl>
+			<dt>Editor</dt>
+			<dd>É a escrita ou desenvolvimento do programa código fonte. Se faz necessário um editor de texto simples como bloco de notas do windows ou vi do linux.
+			Existem os ambientes de desenvolvimento integrado (IDE - Integrated Development Enviroment) qued fornecem muitas ferramentas de suporte ao processo de desenvolvimento de software em java e outras linguagens.</dd>
+			<br>
+			<dt>Compilador</dt>
+			<dd>O compilador Java converte o código fonte Java em bytecodes, que representas as tarefas a serem realizadas durante a fase de execução. Os bytecodes são executados pelas Java Virtual Machine (JVM) - uma parte do JDK e a base de plataforma Java. A máquina virtual Java (VM - Virtual Machine) é um processo de software que simula um computador, mas oculta o sistema operacional e hardwares subjacentes dos programas que interagem com a VM</dd>
+			<br>
+			<dt>Carregador</dt>
+			<dd>Todo programa deve ser colocado na memória antes de poder executar. O carregador da classe transfere os arquivos .class contendo os bytecodes do programa para a memória principal. O carregadopr de classe também carrega qualquer arquivo .class fornecido pelo Java que seu programa utiliza. Os rquivos .class podem ser carregados a partir de um disco em seu sistema ou em uma rede.</dd>
+			<br>
+			<dt>Verificador</dt>
+			<dd>Enquanto as classes são carregadas, o verificador de bytecodes examina os códigos para assegurar que eles são válidos e não violam restrições de segurança do Java. O Java impõe uma forte segurança para verificar-se de que os programasw Java que chegam pela rede não danifiquem os arquivos do sistema.</dd>
+			<br>
+			<dt>Interpretador</dt>
+			<dd>Execução
+			<br>
+			A JVM executa o programa interpretando o bytecode gerado na fase de compilação. Com isso, sequência de ações específicas pelo programador são , enfim, executadas. Atualmente, as JVM utilizam uma combinação de interpretação e comlilação just-in-time (JIT). Nesse processo, a JVM analisa os bytecodes a medida que eles ão interpretados. Procurando hot spots (pontos ativos) - parte dos bytecodes, que são executadas com frequência. Para essas partes, um compilador JIT, conhecido como um compilador Java HotSpot, traduz os bytecodes para a linguagem de máquina do computador subjacente.</dd>
+			<br>
+			<dt></dt>
+			<dd></dd>
+		</dl>
+
+		<hr>
+
+		<h3>Ambiente De Programação Em Java</h3>
+		<p>O ambiente de desenvolvimento de software Java, Java SDK (antigamente, JDK), é formado, essencialmente, por um conjunto de aplicativos que permite, entre outras tarefas, realizar a compilação e a execução de programas escritos na linguagem Java. Este ambiente pode ser baixado gratuitamente a partir do site da Sun Microsystems http://java.sun.com. 
+		<br>
+		As ferramentas básicas do kit de desenvolvimento Java são:</p>
+		<ul>
+			<li>O compilador Java, javac</li>
+			<li>O interpretador de aplicações Java (máquina virtual), java</li>
+			<li>O interpretador de applets Java, appletviewer</li>
+		</ul>
+
+		<h4>Entendendo as siglas do ambiente Java</h4>
+		<dl>
+			<dt>J2SE</dt>
+			<dd>Java2 Standard Edition – Fornece as principais APIs e enfoca o desenvolvimento de aplicações na arquitetura Cliente – Servidor. Não permite distribuição de objetos nem oferece suporte a tecnologias para Internet.</dd>
+			<br>
+			<dt>J2EE</dt>
+			<dd>Java2 Enterprise Edition – Fornece um conjunto de APIs para o desenvolvimento corporativo e enfoca na integração entre sistemas. Disponibiliza alta distribuição de objetos e oferece total suporte a tecnologias para Internet.</dd>
+			<br>
+			<dt>J2ME</dt>
+			<dd>Java2 Micro Edition – Fornece as APIs para o desenvolvimento de aplicações para computação móvel, em pequenos dispositivos ou tecnologias embarcadas.</dd>
+		</dl>
+
+		<h3>Tipos De Programas Java</h3>
+		<dl>
+			<dt>Stand - Alone</dt>
+			<dd>Stand - alone – Aplicações baseadas na J2SE que tem total acesso aos recursos do sistema, memória, disco, rede, dispositivos, etc.</dd>
+			<br>
+			<dt>Java Applets</dt>
+			<dd>Pequenas aplicações que não têm acesso aos recursos de hardware, necessitando de um navegador com suporte a J2SE para serem executados.</dd>
+			<br>
+			<dt>Java Servlets</dt>
+			<dd>Programas desenvolvidos para serem executados em servidores Web, baseados na J2EE, comumente usados para gerar conteúdos dinâmicos para websites.</dd>
+			<br>
+			<dt>Java Midlets</dt>
+			<dd>Pequenas aplicações, extremamente seguras e construídas para serem executadas dentro do J2ME.</dd>
+			<br>
+			<dt>JavaBeans</dt>
+			<dd>São componentes de software escritos em Java que podem ser manipulados visualmente com a ajuda de uma ferramenta de desenvolvimento.</dd>
+		</dl>
+
+		<hr>
+
+		<h3>Construindo Um Ambiente Para Programação  Em Java</h3>
+		<p>Para desenvolver programas em Java, precisamos obter o Kit de Desenvolvimento Java, que é gratuito e disponível para download no seguinte endereço:</p>
+
+		<a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank">http://java.sun.com/javase/downloads/index.jsp</a>
+
+		<br><br>
+
+		<p>Neste link, a Sun disponibiliza uma série de kit’s para cada perfil. Sugerimos o JDK – JRE.
+		É necessário, ainda, que o usuário escolha a plataforma (o computador e sistema operacional) onde o kit será instalado.</p>
+		<p>Para instalar, clique no arquivo baixado e siga as instruções do site para efetuar a correta instalação. 
+		No link abaixo, existe um artigo que auxilia o usuário na instalação do J2SE no Windows 2000/XP</p>
+
+		<a href="http://www.guj.com.br/article.show.logic?id=163" target="_blank">http://www.guj.com.br/article.show.logic?id=163</a>
+
+		<hr>
+
+		<h3>Escrevendo E Executando O Primeiro Programa</h3>
+
+		<p>1 . Abra o bloco de notas e digite o código</p>
+
+		<pre>
+		public class PrimeiroPrograma{
+                                       public static void main(String args[]){
+                                                           System.out.println(“Bem vindo ao Mundo Java”);
+                                       }
+		}
+		</pre>
+
+		<p>2 . Em Java, uma classe pública deve ser salva em um arquivo com o mesmo nome, com a extensão .java. Como nossa classe se chama PrimeiroPrograma, devemos salvar este arquivo como PrimeiroPrograma.java. Muita atenção com a caixa da letra, pois o Java faz diferença entre letras maiúsculas e minúsculas.</p>
+
+		<p>. Abra o prompt do DOS. Para compilar o código, iremos usar uma ferramenta SDK, o compilador javac. Isso faz com que o bytecode seja gerado. Este processo faz com que o arquivo PrimeiroPrograma.class seja gerado.</p>
+
+		<p>4. Observe na figura abaixo que estamos na pasta onde salvamos o nosso arquivo PrimeiroPrograma.java. O comando javac foi executado, nenhum erro foi encontrado e foi gerado o arquivo PrimeiroPrograma.class.</p>
+
+		<p>5 . Para executar este código, temos que chamar a máquina virtual. Para isso, basta:
+		java PrimeiroPrograma</p>
+
+		<p>6 . Observe que não há necessidade de colocar a extensão neste passo.</p>
+
+		<P>Parabéns, você conseguiu executar seu primeiro programa!</P>
+
+	</section>
+
+</body>
+</html>
